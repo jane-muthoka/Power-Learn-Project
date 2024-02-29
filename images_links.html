@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Images</title>
+    <style>
+        body{
+            background: white;
+            font: 200;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 10px;
+            padding: 20px;
+        }
+        .grid-item {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        nav {
+            background-color: green;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav img {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00; /* Change the color on hover */
+        }
+        #Gallery{
+            background-color: rgb(145, 207, 145);
+        }
+        footer{
+            background: black;
+            background-color:green;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="logo.jpg"alt="Sample logo"width="100" height="100">
+        <a href="#Home">Home</a>
+        <a href="#Gallery">Gallery</a>
+        <a href="#Menu">Menu</a>
+    </nav>
+    <section id="Home">
+        <h1>Welcome</h1>
+        <p>Here is where I bake,code of course!</p>
+        <a href="https://github.com/jane-muthoka">
+        <img src="tech.jpg" alt="A tech photo" width="200" height="200" class="image-align">
+        </a>
+    </section>
+    <section id ="Gallery">
+        <p>Lets explore nature. I know you love nature. I do too.</p>
+        <div class="grid-container">
+            <div class = "grid_item1">
+                <a href="https://www.nature.com">
+                    <img src="nature.jpeg" alt="Nature at night" width="200"height="200"class ="image-align">
+                </a>
+            </div>
+            <div class="grid-item1">
+                <a href="nature2.html">
+                    <img src="nature3.jpeg"alt="Tree canopy"width="200"height="200"class="image-align">
+                </a>
+
+            </div>
+            <div class="grid-item1">
+                <a href="nature3.html">
+                    <img src="nature4.webp"alt="Fruits hanging from a tree"width="200"height="200"class="image-align">
+                </a>
+        </div>
+    </section>
+
+    <section id="Food">
+        <h1>Food Page</h1>
+        <p>You already know much about me. Here is more to add about me. I have a list of food I'd like to cook.haha.</p>
+        <lu>
+            <li>Macaroni</li>
+            <img src="macaroni.jpeg"alt ="macaroni" width="100"height="100">
+            <li>Loaded Fries</li>
+            <img src="loadedfries.jpeg"alt ="Fries" width="100"height="100">
+            <li>Pancakes</li>
+            <img src="pancakes.jpeg"alt ="pancakes" width="100"height="100">
+        </lu>
+    </section>
+<footer>
+    Thanks for reading!
+</footer>
+</body>
+</html>
